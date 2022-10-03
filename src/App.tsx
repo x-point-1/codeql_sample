@@ -2,13 +2,8 @@ import React from "react"
 import logo from "./logo.svg"
 import "./App.css"
 
-function sample() {
-  const tmp = 1
-  console.log(tmp)
-  sample()
-}
-
 function App() {
+  const name = document.write(decodeURI(location.hash.substring(1)))
   return (
     <div className="App">
       <header className="App-header">
